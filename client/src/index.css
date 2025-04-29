@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem !important;
+  height: 0.5rem !important;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ff5252 !important;
+  border-radius: 0.25rem !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    @apply font-heading;
+  }
+  body {
+    @apply font-body  bg-secondary overflow-x-hidden;
+  }
+
+  h1 {
+    @apply text-lg tablet:text-xl laptop:text-[1.375rem]  font-semibold text-black;
+  }
+
+  h2 {
+    @apply laptop:text-lg text-base  font-semibold text-secondary;
+  }
+
+  h3 {
+    @apply text-xl  font-medium text-black;
+  }
+
+  h4 {
+    @apply text-sm  font-normal text-secondary;
+  }
+
+  p {
+    @apply text-sm font-normal text-gray-600;
+  }
+
+  li {
+    @apply list-none;
+  }
+}
+
+.link {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.link:hover {
+  color: #ff5252;
+}
+
+/* MUI CSS */
+
+.MuiButton-root {
+  font-family: "Inter", "Poppins", sans-serif !important;
+}
+
+.MuiBadge-badge {
+  background-color: #ff5252 !important;
+}
+
+.MuiTabs-indicator {
+  background-color: #ff5252 !important;
+}
+
+.MuiTab-textColorPrimary.Mui-selected {
+  color: #ff5252 !important;
+}
+
+.MuiTab-root {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 0.8rem !important;
+}
+
+.MuiBreadcrumbs-ol {
+  font-family: inherit !important;
+  font-size: 0.875rem !important;
+}
+
+.actions button:hover svg {
+  pointer-events: none !important;
+}
+
+.Mui-selected.MuiPaginationItem-page {
+  background: #ff5252 !important;
+  color: white !important;
+}
+
+.MuiTabs-flexContainer button {
+  font-size: 0.85rem !important;
+  text-transform: capitalize !important;
+}
+
+.rightsidecontent .actions button {
+  min-width: 2.5rem !important; /* 40px in rem (assuming 16px base font size) */
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  height: 1.875rem !important; /* 30px in rem */
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.btn-org {
+  background: #ff5252 !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  padding: 0.4375rem 1.25rem !important; /* 7px and 20px in rem */
+}
+
+.btn-org:hover {
+  background: #171717 !important;
+}
+
+.btn-lg {
+  padding: 0.625rem 1.2rem !important; /* 10px and 30px in rem */
+  font-size: 1rem !important;
+}
+
+/* =================================
+======== Swiper Slider css ======= */
+
+.mySwiper {
+  overflow: inherit !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 100%;
+  width: 2.8125rem; /* 45px in rem (assuming 16px base font size) */
+  height: 2.8125rem; /* 45px in rem */
+  min-width: 2.8125rem; /* Ensures minimum width in rem */
+  box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 1.25rem !important;
+  color: #000;
+}
+
+.swiper-button-prev:hover {
+  background: #ff5252 !important;
+}
+
+.swiper-button-next:hover {
+  background: #ff5252 !important;
+}
+
+.homCatSlider {
+  overflow: inherit !important;
+}
+
+.HomeCatSlider .swiper-button-prev,
+.HomeCatSlider .swiper-button-next {
+  width: 1.875rem;
+  height: 1.875rem;
+  min-width: 1.875rem;
+  min-height: 1.875rem;
+}
+
+.HomeCatSlider .swiper-button-prev:after,
+.HomeCatSlider .swiper-button-next:after {
+  font-size: 1rem !important;
+}
+
+.HomeCatSlider .swiper-button-prev {
+  left: -0.7rem !important;
+}
+
+.HomeCatSlider .swiper-button-next {
+  right: -0.7rem !important;
+}
+
+.HomeCatSlider .swiper-button-prev:hover {
+  background: #ff5252 !important;
+}
+
+.HomeCatSlider .swiper-button-next:hover {
+  background: #ff5252 !important;
+}
+
+.smallBtn .swiper-button-prev,
+.smallBtn .swiper-button-next {
+  width: 1.875rem;
+  height: 1.875rem;
+  min-width: 1.875rem;
+}
+
+.productslider .swiper-wrapper {
+  padding: 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.swiperslider .zoomVerticalSliderThumb .swiper-slide {
+  height: auto !important;
+}
+
+.swiperslider .zoomVerticalSliderThumb .swiper-button-next {
+  bottom: 0.5rem !important;
+  top: auto !important;
+  right: inherit !important;
+  width: 100% !important;
+  height: 2rem !important;
+  border-radius: 0px !important;
+}
+
+.swiperslider .zoomVerticalSliderThumb .swiper-button-prev {
+  top: 1.2rem !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 2rem !important;
+  border-radius: 0px !important;
+}
+
+.swiperslider .zoomVerticalSliderThumb .swiper-button-next:after,
+.swiperslider .zoomVerticalSliderThumb .swiper-button-prev:after {
+  transform: rotate(90deg) !important;
+}
+
+/* React Collapse  */
+
+.ReactCollapse--collapse {
+  transition: height 400ms;
+}
+
+/* React Range input */
+.range-slider .range-slider__thumb {
+  width: 0.8rem !important;
+  height: 0.8rem !important;
+  background-color: #ff5252 !important;
+}
+
+.range-slider .range-slider__range {
+  background-color: #ff5252 !important;
+}
+
+.range-slider {
+  height: 0.4rem !important;
+}
+
+/* Product list */
+
+.sidebarProductList .scroll {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 15.625rem;
+}
+
+.sidebarProductList .scroll::-webkit-scrollbar {
+  width: 0.3rem !important;
+  height: 0.5rem !important;
+}
+
+.sidebarProductList .scroll::-webkit-scrollbar-thumb {
+  background: #ff5252 !important;
+}
+
+/* =================================
+======== CSS media quries ======= */
+
+@media only screen and (min-width: 320px) and (max-width: 992px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .navigation ul {
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    text-align: center;
+  }
+
+  .navigation ul li {
+    display: inline-block !important;
+    vertical-align: top !important;
+  }
+  .navigation ul::-webkit-scrollbar {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .MuiTabs-flexContainer button {
+    font-size: 0.7rem !important;
+    text-transform: capitalize !important;
+  }
+
+  .sidebarProductList {
+    max-height: 100vh !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+  }
+
+  .sidebarProductList::-wepkit-scrollbar {
+    display: none !important;
+  }
+
+
+  .cartPanel .MuiPaper-root {
+    width: 300px !important;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =================================
+======== page not found css ======= */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title {
+  font-size: 6.25rem;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+  margin-top: 1rem;
+}
+
+.pnf-btn {
+  color: black;
+  border: 0.0625rem solid black;
+  text-decoration: none;
+  padding: 0.625rem;
+  margin-top: 0.625rem;
+}
+
+.pnf-btn:hover {
+  background-color: black;
+  color: white;
+}
